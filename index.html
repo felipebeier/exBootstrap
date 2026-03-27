@@ -1,42 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${1:Título da Página}</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbearia Estilo Livre</title>
 
-    
-    <meta name="description" content="${2:Descrição da página}">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="${3:url-da-pagina}">
-
-    
-    <meta property="og:title" content="${1:Título da Página}">
-    <meta property="og:description" content="${2:Descrição da página}">
-    <meta property="og:type" content="website">
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="">
     <header>
-        <nav aria-label="Menu Principal">
-            <ul>
-                <li><a href="#">Home</a></li>
+      <!-- Barra de navegação -->
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo2.png" height="83"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Depoimentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
+      <!-- END Barra de navegação -->
     </header>
 
     <main id="main-content" tabindex="-1">
-        <section>
-            <h1></h1>
-
-        </section>
+      <div class="text-center">
+        <img src="https://placehold.co/800x500" class="min-vh-100 rounded" />
+      </div>
+      <!-- Sobre Nós -->
+      <section class="py-5">
+        <div class="container text-center">
+          <h2 class="mb-4 text-light playfair-display">Sobre Nós</h2>
+          <p class="lead">
+            Estilo Livre: Mais que um corte, uma identidade. Fundada em 2024, a
+            Barbearia Estilo Livre nasceu da paixão pela cutelaria clássica
+            aliada ao lifestyle urbano. Nossa proposta é oferecer um refúgio
+            para o homem moderno que não abre mão da tradição, mas busca um
+            visual autêntico e personalizado. Aqui, cada barba e cada corte são
+            tratados como arte, respeitando a fisionomia e o estilo único de
+            cada cliente. Venha tomar uma cerveja gelada, ouvir um bom blues e
+            renovar sua melhor versão.
+          </p>
+        </div>
+      </section>
+      <!------------------ END Sobre Nós------------------>
+      <!------------------ Serviços---------------------->
+      <!------------------ END Serviços------------------>
+      <!------------------ Depoimentos---------------------->
+      <!------------------ END Depoimentos------------------>
+      <!------------------ Contato ---------------------->
+      <!------------------ END Contato ------------------>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Todos os direitos reservados.</p>
+      <p>&copy; 2026 - Todos os direitos reservados.</p>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
