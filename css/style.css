@@ -1,5 +1,6 @@
 body,
 main {
+  padding-top: 83px;
   background-color: #121212 !important;
   color: #f5f5f5;
   font-family: "Montserrat", sans-serif;
@@ -12,7 +13,12 @@ main {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair Display", serif;
 }
 
@@ -30,6 +36,20 @@ h1, h2, h3, h4, h5, h6 {
 .transform-hover:hover {
   transform: scale(1.05);
   z-index: 10;
+}
+
+.carousel-item {
+  min-height: 300px;
+}
+.carousel-item .blockquote {
+  margin-bottom: 0;
+}
+.carousel-item .blockquote-footer {
+  background-color: transparent !important;
+  border: none !important;
+}
+.carousel-item .blockquote-footer::before {
+  color: #d4af37;
 }
 
 footer {

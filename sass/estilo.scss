@@ -7,8 +7,8 @@ $primary-color: #d4af37;
 $font-titles: "Playfair Display", serif;
 $font-body: "Montserrat", sans-serif;
 
-body,
-main {
+body {
+    padding-top: 83px;
     background-color: $bgg-color !important;
     color: $text-main;
     font-family: $font-body;
@@ -19,7 +19,12 @@ main {
     font-weight: 700; // Ajustado de 20rem para um valor numérico válido
     font-style: normal;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $font-titles;
 }
 
@@ -35,6 +40,22 @@ h1, h2, h3, h4, h5, h6 {
     &:hover {
         transform: scale(1.05); // Aumenta o card em 5% no hover
         z-index: 10; // Garante que ele fique por cima dos outros ao crescer
+    }
+}
+.carousel-item {
+    // Garante que o item ocupe um espaço fixo para as setas não dançarem
+    min-height: 300px; 
+    
+    .blockquote {
+        margin-bottom: 0;
+    }
+
+    .blockquote-footer {
+        background-color: transparent !important;
+        border: none !important;
+        &::before {
+            color: $primary-color; // Deixa o tracinho "—" dourado também
+        }
     }
 }
 
