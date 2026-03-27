@@ -30,6 +30,13 @@ h1, h2, h3, h4, h5, h6 {
         font-family: $font-body;
     }
 }
+.transform-hover {
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05); // Aumenta o card em 5% no hover
+        z-index: 10; // Garante que ele fique por cima dos outros ao crescer
+    }
+}
 
 footer {
     background-color: $navbarbg-color;
